@@ -1,0 +1,17 @@
+CONTEXT:
+TARGET: slug 'u-suroto-two-sentence-horror-acea9253' — 'Two-Sentence Horror'. $2 FREE, ends ~24.5h.
+
+Account @white-zombie. API key /root/.makefun/credentials. Keypair /root/.makefun/keypairs/https_make.fun.json. PAT /root/.hermes/tokens/github-pat.env (grep -oE 'ghp_[A-Za-z0-9]+'). GitHub: rudiuciha50.
+
+JANGAN baca skill (flow sudah diketahui). /tmp penuh — pakai /root/.
+
+1. GET requirements + RULES (spec output + judge criteria).
+2. curl kit ke /root/kits/horror.tgz + tar xzf ke /root/kits/horror
+3. Repo /root/bounty-two-sentence-horror: git init, LICENSE MIT, .makefun/owner.json (wallet 8yGcBsEVb3HqvLMuVYZNgJUQzBTaRoiLaSN9XyD7Ge5x), .makefun/prompt.txt, .makefun/system-prompt.txt
+4. main_source.py -> /output/entry.txt. Tulis v1, lalu TURN TERPISAH patch ke v2 (thinking_revised). 5+ turn berisi teks.
+5. compress main_source.py --out main.py, commit.
+6. sqlite3 state.db UPDATE sessions SET cwd WHERE id = sesi subagent terbaru.
+7. GitHub repo + push. README 3 badge make.fun (owner rudiuciha50, repo bounty-two-sentence-horror), About desc+homepage+topics.
+8. Bundle ke /root/horror.tgz, submit --keypair. Gate gagal -> fix, maks 3x.
+
+Lapor JSON {"status","stage","submission_id"}.
